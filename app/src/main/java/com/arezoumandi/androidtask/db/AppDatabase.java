@@ -104,6 +104,15 @@ public abstract class AppDatabase extends RoomDatabase {
         });
     }
 
+    public static void updateData(final AppDatabase database, final List<CountryEntity> countryEntities) {
+        database.runInTransaction(new Runnable() {
+            @Override
+            public void run() {
+                database.countrytDao().updateCountries(countryEntities);
+            }
+        });
+    }
+
     private static void addDelay() {
         try {
             Thread.sleep(4000);
