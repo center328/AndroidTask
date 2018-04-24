@@ -6,7 +6,7 @@
     <data>
         <variable
             name="isLoading"
-            type="boolean" />
+            type="Boolean" />
     </data>
 
     <LinearLayout
@@ -25,12 +25,12 @@
             app:visibleGone="@{isLoading}"/>
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/countries_list"
+            android:id="@+id/country_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="LinearLayoutManager"
             app:visibleGone="@{!isLoading}"/>
 
     </LinearLayout>
-
 </layout>
+

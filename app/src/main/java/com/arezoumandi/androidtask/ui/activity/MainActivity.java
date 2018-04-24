@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Add product list fragment if this is first creation
+        // Add countries list fragment if this is first creation
         if (savedInstanceState == null) {
             CountryListFragment fragment = new CountryListFragment();
 
